@@ -2,5 +2,7 @@
 
 module.exports = {
     Workout: require("./Workout"),
-    Exercise: require("./Exercise")
+    Exercise: require("./Exercise"),
+    CardioExercise: require("./CardioExercise"),
+    ResistenceExercise: require("./ResistenceExercise")
   };
