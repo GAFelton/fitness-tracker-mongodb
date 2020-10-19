@@ -10,7 +10,7 @@ The Mongoose schema has Exercises as a populated field in Workouts. Additionally
 
 I also used Mongoose's virtual attribute function to calculate total duration for the homepage.
 
-  Link to Deployed Project || [Link to GitHub Repo](https://github.com/GAFelton/fitness-tracker-mongodb)
+  [Link to Deployed Project](https://nameless-tundra-41076.herokuapp.com/) || [Link to GitHub Repo](https://github.com/GAFelton/fitness-tracker-mongodb)
 
 ![homepage-screenshot](.\assets\homepage-screenshot.png)
 
@@ -33,7 +33,9 @@ I also used Mongoose's virtual attribute function to calculate total duration fo
 3. Use your preferred method to establish environmental variables - I used VSCode's built-in launch configurations with the added parameter `"envFile": "${workspaceFolder}/.env"`.
 4. Launch your app with `npm start` or `node server.js`.
 
-  
+> A Note: Hosting with Heroku takes a few more steps. You can find more instructions on [how to set up Heroku here](https://devcenter.heroku.com/articles/preparing-a-codebase-for-heroku-deployment), and [how to connect your MongoDB Atlas cloud db with Heroku](https://dev.to/cpclark360/how-to-host-a-restful-node-js-server-with-mongodb-atlas-database-on-heroku-1opl).
+
+
 
   ## Usage
 
