@@ -1,67 +1,69 @@
-# fitness-tracker-mongodb
+# MongoDB Fitness Tracker
+
+ ![GitHub](https://img.shields.io/github/license/GAFelton/fitness-tracker-mongodb)
+
+  ## Description:
+
+  An app using Express, Mongoose, and mongoDB to track fitness progress over time. Users can input their fitness data, tracking workouts and exercises within those workouts, which will be stored in a NoSQL database.
+
+The Mongoose schema has Exercises as a populated field in Workouts. Additionally, I used Mongoose's discriminator mechanism to inherit and extend Exercise attributes.
+
+I also used Mongoose's virtual attribute function to calculate total duration for the homepage.
+
+  Link to Deployed Project || [Link to GitHub Repo](https://github.com/GAFelton/fitness-tracker-mongodb)
+
+![homepage-screenshot](.\assets\homepage-screenshot.png)
 
 
 
+  ## Table of Contents
+
+ * [Installation](#Installation)
+ * [Usage](#Usage)
+ * [License](#License)
+ * [Contributing](#Contributing)
+ * [Questions](#Questions)
+
+  
+
+  ## Installation
+
+1. Clone this [repo](https://github.com/GAFelton/fitness-tracker-mongodb).
+2. Set up your local MongoDB URI inside a .env file. My .env file contained:`MONGODB_URI=mongodb://localhost:27017/fitnessTrackerDB`
+3. Use your preferred method to establish environmental variables - I used VSCode's built-in launch configurations with the added parameter `"envFile": "${workspaceFolder}/.env"`.
+4. Launch your app with `npm start` or `node server.js`.
+
+  
+
+  ## Usage
+
+  Create a new workout or add to an existing one.
+
+  Each exercise can be either cardio or resistance.
+
+  View your progress over time on the dashboard and current stats on the homepage.
+
+![dashboard-screenshot](.\assets\dashboard-screenshot.png)
 
 
----
 
-Notes on Exercise:
+  ## License
 
-# Unit 17 Nosql Homework: Workout Tracker
+  MIT
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+  
 
-## User Story
+  ## Contribution Guidelines
 
-* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+  Please let me know how I can improve on this project! Issues and pull requests are welcome.
 
-## Business Context
 
-A consumer will reach their fitness goals more quickly when they track their workout progress.
 
-## Acceptance Criteria
+  ## Questions
 
-When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
+  Please address questions to GAFelton.
 
-The user should be able to:
+  [Link to Profile](https://github.com/GAFelton)
 
-  * Add exercises to a previous workout plan.
+  [E-mail](64555318+GAFelton@users.noreply.github.com)
 
-  * Add new exercises to a new workout plan.
-
-  * View the combined weight of multiple exercises on the `stats` page.
-
-To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
-
-  * [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
-
-  * [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
-
-## Commit Early and Often
-
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for the following two reasons:
-
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills.
-
-2. Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
-
-Follow these guidelines for committing:
-
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
-
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
-
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We want you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL to the deployed application
-
-* The URL to the GitHub repository
