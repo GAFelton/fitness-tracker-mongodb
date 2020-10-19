@@ -28,7 +28,8 @@ nav {
 #orangeButton {
   background-color: #f2711c;
   border-radius: 4px;
-  width: 599.5px;
+  min-width: 40vw;
+  max-width: 599.5px;
   text-align: center;
   vertical-align: center;
   align-items: center;
