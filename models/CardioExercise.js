@@ -1,3 +1,7 @@
+const mongoose = require("mongoose");
+
+const Schema = mongoose.Schema;
+
 const Exercise = require("./Exercise");
 
 const cardioExerciseSchema = new Schema({
@@ -6,7 +10,7 @@ const cardioExerciseSchema = new Schema({
         required: true,
         min: [0, 'You expect me to believe that you ran negative distance?']
     }
-}, options);
+}, Exercise.options);
 
 const CardioExercise = Exercise.discriminator('cardio', cardioExerciseSchema);
 

@@ -1,3 +1,7 @@
+const mongoose = require("mongoose");
+
+const Schema = mongoose.Schema;
+
 const Exercise = require("./Exercise");
 
 const resistanceExerciseSchema = new Schema({
@@ -16,7 +20,7 @@ const resistanceExerciseSchema = new Schema({
         required: true,
         min: [0, "Negative sets aren't a thing."]
     }
-}, options);
+}, Exercise.options);
 
 const ResistanceExercise = Exercise.discriminator('resistance', resistanceExerciseSchema);
 
