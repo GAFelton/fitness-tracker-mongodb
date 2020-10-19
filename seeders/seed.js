@@ -1,7 +1,27 @@
+// DO NOT USE SEED TO SEED THIS DATABASE!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let mongoose = require("mongoose");
 let db = require("../models");
 
-mongoose.connect("mongodb://localhost/workout", {
+mongoose.connect("mongodb://localhost/fitnessTrackerDB", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
