@@ -69,7 +69,8 @@ function populateChart(data) {
     options: {
       responsive: true,
       title: {
-        display: true
+        display: true,
+        text: "Workout Duration"
       },
       scales: {
         xAxes: [
@@ -171,7 +172,7 @@ function populateChart(data) {
       labels: workouts,
       datasets: [
         {
-          label: "Excercises Performed",
+          label: "Resistance Excercises Performed",
           backgroundColor: colors,
           data: pounds
         }
@@ -180,7 +181,7 @@ function populateChart(data) {
     options: {
       title: {
         display: true,
-        text: "Excercises Performed"
+        text: "Resistance Excercises Performed"
       }
     }
   });

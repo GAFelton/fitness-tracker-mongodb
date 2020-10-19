@@ -17,12 +17,21 @@ body {
 }
 
 nav {
-  background-color: #5793fd;
+  background-color: #bed5f8;
   color: #ffffff;
   height: 80px;
   padding: 10px;
   line-height: 3;
   font-size: 1.2rem;
+}
+
+#orangeButton {
+  background-color: #f2711c;
+  border-radius: 4px;
+  width: 599.5px;
+  text-align: center;
+  vertical-align: center;
+  align-items: center;
 }
 
 a,
