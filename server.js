@@ -4,20 +4,27 @@ const mongoose = require("mongoose");
 
 const PORT = process.env.PORT || 3000;
 
-const db = require("./models");
-
 const app = express();
 
+mongoose.set('useFindAndModify', false);
 app.use(logger("dev"));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
+require("./routes/apiRoutes.js")(app);
+require("./routes/htmlRoutes.js")(app);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/populatedb", { useNewUrlParser: true });
 
 
-app.listen(PORT, () => {
-  console.log(`App running on port ${PORT}!`);
+const connectDb = () => {
+  return mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitnessTrackerDB", { useNewUrlParser: true });
+};
+
+
+connectDb().then(async () => {
+  app.listen(PORT, () => {
+    console.log(`App running on port ${PORT}!`);
+  });
 });
