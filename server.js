@@ -19,7 +19,9 @@ require("./routes/htmlRoutes.js")(app);
 
 
 const connectDb = () => {
-  return mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitnessTrackerDB", { useNewUrlParser: true });
+  return mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitnessTrackerDB", { 
+    useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
+ });
 };
 
 
