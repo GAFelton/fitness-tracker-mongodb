@@ -1,6 +1,6 @@
 {
   "name": "fitness-tracker-mongodb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An app using Express, Mongoose, and mongoDB to track fitness progress over time. Users can input their fitness data, tracking workouts and exercises within those workouts, which will be stored in a NoSQL database.",
   "main": "server.js",
   "scripts": {
@@ -11,6 +11,9 @@
   },
   "author": "GAFelton",
   "license": "ISC",
+  "engines": {
+    "node": "12.20.0"
+    },
   "dependencies": {
     "express": "^4.16.3",
     "mongoose": "^5.11.8",
