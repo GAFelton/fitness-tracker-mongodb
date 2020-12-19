@@ -10,9 +10,11 @@ The Mongoose schema has Exercises as a populated field in Workouts. Additionally
 
 I also used Mongoose's virtual attribute function to calculate total duration for the homepage.
 
+*[Link to Gist Writeup of Project](https://gist.github.com/GAFelton/df2a55136daf8b2aef22996f284bb673)*
+
   [Link to Deployed Project](https://nameless-tundra-41076.herokuapp.com/) || [Link to GitHub Repo](https://github.com/GAFelton/fitness-tracker-mongodb)
 
-![homepage-screenshot](.\assets\homepage-screenshot.png)
+![homepage-screenshot](./assets/homepage-screenshot.png)
 
 
 
@@ -45,7 +47,7 @@ I also used Mongoose's virtual attribute function to calculate total duration fo
 
   View your progress over time on the dashboard and current stats on the homepage.
 
-![dashboard-screenshot](.\assets\dashboard-screenshot.png)
+![dashboard-screenshot](./assets/dashboard-screenshot.png)
 
 
 
